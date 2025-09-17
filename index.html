@@ -1,11 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+        <div class="container mx-auto">
+            <!-- NAVBAR -->
+            <nav class="relative bg-gray-800">
+                <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                    <div
+                        class="relative flex h-16 items-center justify-between">
+                        <div
+                            class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                            <button
+                                type="button"
+                                command="--toggle"
+                                commandfor="mobile-menu"
+                                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    class="size-6 in-aria-expanded:hidden">
+                                    <path
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Logo -->
+                        <div
+                            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                            <div class="flex shrink-0 items-center">
+                                <img
+                                    src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                                    alt="Logo"
+                                    class="h-8 w-auto" />
+                            </div>
+
+                            <!-- NAV LINKS -->
+                            <div class="hidden sm:ml-6 sm:block">
+                                <div class="flex space-x-4">
+                                    <a
+                                        href="#html"
+                                        class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">HTML</a>
+                                    <a
+                                        href="#css"
+                                        class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">CSS</a>
+                                    <a
+                                        href="#js"
+                                        class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">JavaScript</a>
+                                    <a
+                                        href="#tailwind"
+                                        class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Tailwind
+                                        CSS</a>
+                                    <a
+                                        href="#bootstrap"
+                                        class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Bootstrap</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- CARDS -->
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+                <!-- HTML -->
+                <div
+                    id="html"
+                    class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img
+                        class="h-40 w-full object-contain p-5"
+                        src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                        alt="HTML" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">HTML</div>
+                        <p class="text-gray-700 text-base">
+                            The standard markup language for structuring web
+                            content and
+                            applications.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div id="css"
+                    class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img
+                        class="h-40 w-full object-contain p-5"
+                        src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                        alt="CSS" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">CSS</div>
+                        <p class="text-gray-700 text-base">
+                            Cascading Style Sheets used to style and design the
+                            look and feel
+                            of websites.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div id="js"
+                    class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img
+                        class="h-40 w-full object-contain p-5"
+                        src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                        alt="JavaScript" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">JavaScript</div>
+                        <p class="text-gray-700 text-base">
+                            The programming language that adds interactivity and
+                            functionality
+                            to websites.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div
+                    id="tailwind"
+                    class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img
+                        class="h-40 w-full object-contain p-5"
+                        src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg"
+                        alt="Tailwind CSS" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Tailwind CSS</div>
+                        <p class="text-gray-700 text-base">
+                            A utility-first CSS framework packed with classes
+                            for rapid UI
+                            development.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bootstrap -->
+                <div
+                    id="bootstrap"
+                    class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img
+                        class="h-40 w-full object-contain p-5"
+                        src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png"
+                        alt="Bootstrap" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Bootstrap</div>
+                        <p class="text-gray-700 text-base">
+                            A powerful front-end framework for building
+                            responsive websites
+                            quickly and easily.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
+            type="module"></script>
+    </body>
 </html>
